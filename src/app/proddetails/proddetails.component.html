@@ -1,0 +1,54 @@
+
+<!--<div *ngFor="let product of Products">
+
+    <div class="card" >
+        <img [src]="product.image" class="card-img-top" alt={{product.title}}>
+        <div class="card-body">
+            <h5 class="card-text">{{product.title}}</h5>
+            <h6 class="card-text">{{product.price}}</h6>
+            <p class="card-text">{{product.description}}</p>
+        </div>
+        <div>
+            <nav>
+                <button  class="btn btn-warning" (click)="viewDetails(product.id)" style="margin: 5px;">view details</button>
+                <button  class="btn btn-success" (click)="addToCart(product)" style="margin: 5px;">Add to cart</button>
+            </nav>
+        </div>
+    </div>
+</div>-->
+<!--<div class="product-list">
+    <div class="product-card" *ngFor="let product of Products">
+        <img [src]="product.image" alt="{{product.title}}">
+        <h3>{{product.title}}</h3>
+        <p>{{product.description}}</p>
+        <p>Price:{{product.price|currency}}</p>
+        <button   (click)="viewDetails(product.id)" >view details</button>
+        <button  (click)="addToCart(product)" >Add to cart</button>
+            
+    </div>
+</div>-->
+<div class="container mt-4">
+    <div class="row">
+<div class="col-md-3 mb-4" *ngFor="let product of Products">
+    <div class="card h-100" >
+        <img [src]="product.image" class="card-img-top" alt="{{product.title}}" height="250px"/>
+        
+        <div class="card-body d-flex flex-column">
+            <h3>{{product.title}}</h3>
+            <h5 class="card-title">{{product.description.substring(0,25)}}...</h5>
+            <p class="card-text lead fw-bold">Price:{{product.price}}</p>
+            <div class="mt-auto">
+            <button  class="btn btn-primary me-2"  (click)="viewDetails(product.id)"  tyle="margin:5px">view details</button>
+          <button class="btn btn-success" (click)="addToCart(product)" style="margin:5px">Add to cart</button>
+            </div>
+
+         
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<hr/>
+
+
+

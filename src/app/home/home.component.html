@@ -1,0 +1,14 @@
+<div class="test">
+    <div class="card text-bg-dark text-white border-0">
+        <img src="assets\images\shop.jpg" class="card-img" alt="background" height="480px"/>
+        <div class="card-img-overlay">
+            <h1 class="card-title display-3 fw-bolder mb-0">GREAT INDIA FESTIVAL</h1>
+        </div>
+    </div>
+</div>
+<div>
+    <h2 class="text-center">Welcome to the Home page</h2>
+    <h3 *ngIf="currentUser">Logged in as :{{currentUser}}</h3>
+    <button class="btn btn-danger" (click)="logout()">Logout</button>
+</div>
+

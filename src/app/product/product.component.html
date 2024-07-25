@@ -1,0 +1,18 @@
+
+<div *ngIf="product" class="product">
+ <div class="product-image">   
+<img class="card-img-top" [src]="product.image" alt="Card image">
+</div>  
+<div class="container">
+    <h1>{{product.title}}</h1>
+    <p><strong>Category:{{product.category}}</strong></p>  
+    <p><strong>Price:{{product.price|currency:'USD'}}</strong></p>
+    <p><strong>{{product.description}}</strong></p>
+    <p>Rating:{{product.rating.rate}}</p>
+<div class="mt-auto">
+   <button routerLink="/cart" class="btn btn-success me-2">Go to Cart</button>
+   <button routerLink="/proddetails" class="btn btn-warning">Go to Products</button>
+</div>
+    
+</div>
+<div>

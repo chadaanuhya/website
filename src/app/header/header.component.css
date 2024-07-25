@@ -1,0 +1,30 @@
+mynavbar{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.nav-link{
+    color:white;
+    font-size: 30px;
+
+}
+.card-container{
+    position:relative;
+    display:inline-block;
+
+}
+.cart-icon img{
+    width:50px;
+    height:50px;
+}
+.cart-count{
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    background-color:red;
+    color:white;
+    border-radius:50%;
+    padding:5px 10px;
+    font-size:14px;
+    font-weight:bold;
+}

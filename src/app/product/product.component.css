@@ -1,0 +1,43 @@
+.product{
+    display:flex;
+    align-items: flex-start;
+    border:1px solid #ccc;
+    padding:1em;
+    margin-bottom:1em;
+}
+
+
+.product-image{
+    flex:1;
+    max-width:300px;
+    
+}
+.product-image img{
+    width:500px;
+    height:500px;
+    display:block;
+}
+
+.container {
+    flex:2;
+    margin-left: 25em;
+    margin-top:10em;
+}
+.container h1{
+    font-size:1.5em;
+    margin-bottom:0.5em;
+}
+.container p{
+    font-size:1.2em;
+    margin-bottom:0.5em;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    margin-top:10px;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+
+
+
